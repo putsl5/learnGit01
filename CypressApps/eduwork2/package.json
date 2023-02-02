@@ -1,0 +1,16 @@
+{
+  "name": "eduwork",
+  "version": "1.0.0",
+  "description": "how make",
+  "main": "index.js",
+  "author": "putsal",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "11.2.0",
+    "prettier": "^2.8.3"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  }
+}
