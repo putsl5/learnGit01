@@ -311,6 +311,13 @@ cross-spawn@^7.0.0:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+cypress-recurse@^1.27.0:
+  version "1.27.0"
+  resolved "https://registry.yarnpkg.com/cypress-recurse/-/cypress-recurse-1.27.0.tgz#0c61e809c5f7740a7e907714614c49c72dcb5c1f"
+  integrity sha512-BCD83UqaxlD+JiqZn1PvIhHRXasgfCt57vLC1Fcyifvxh4QklELRcYUJV3MdhKamMkmajaErLfnCNbZ8VJ5SIg==
+  dependencies:
+    humanize-duration "^3.27.3"
+
 cypress@9.5.3:
   version "9.5.3"
   resolved "https://registry.yarnpkg.com/cypress/-/cypress-9.5.3.tgz#7c56b50fc1f1aa69ef10b271d895aeb4a1d7999e"
@@ -607,6 +614,11 @@ human-signals@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
+
+humanize-duration@^3.27.3:
+  version "3.28.0"
+  resolved "https://registry.yarnpkg.com/humanize-duration/-/humanize-duration-3.28.0.tgz#f79770c0bec34d3bfd4899338cc40643bc04df72"
+  integrity sha512-jMAxraOOmHuPbffLVDKkEKi/NeG8dMqP8lGRd6Tbf7JgAeG33jjgPWDbXXU7ypCI0o+oNKJFgbSB9FKVdWNI2A==
 
 ieee754@^1.1.13:
   version "1.2.1"
