@@ -1,0 +1,22 @@
+{
+    "products" :[{
+        "produk" : "Sauce Labs Backpack",
+        "label" : "sauce-labs-backpack"
+    },
+    {
+        "produk" :"Sauce Labs Bike Light",
+        "label" : "sauce-labs-bike-light"
+    },
+    {
+        "produk" :"Sauce Labs Bolt T-Shirt",
+        "label" : "sauce-labs-bolt-t-shirt"
+    },
+    {
+        "produk" :"Sauce Labs Fleece Jacket",
+        "label" : "sauce-labs-fleece-jacket"
+    },
+    {
+        "produk" :"Sauce Labs Onesie",
+        "label" : "sauce-labs-onesie"
+    }]
+}
