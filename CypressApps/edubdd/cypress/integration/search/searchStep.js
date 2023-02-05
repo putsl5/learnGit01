@@ -1,14 +1,15 @@
 /// <reference types="cypress" />
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import SearchPage from './searchPage';
 
 Given('I go to application search page', () => {
-    cy.visit('http://zero.webappsecurity.com/index.html')
+    SearchPage.visit()
 
 })
 
 When('I fill search', () => {
-    cy.get('#searchTerm').type('online {enter}')
+    SearchPage.fillSearch('online {enter}')
 
 })
 
