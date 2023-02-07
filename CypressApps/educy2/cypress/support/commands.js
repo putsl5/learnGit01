@@ -36,6 +36,20 @@ Cypress.Commands.add('login', (username, password) => {
     cy.contains('Sign in').click()
 })
 
+
+// Cypress.Commands.add('loginViaAPI', (email, password) => {
+//     cy.request('GET', `https://the-internet.herokuapp.com/basic_auth`, {
+//       username: email,
+//       password,
+//     }).then((response) => {
+//       cy.setCookie('sessionId', response.body.sessionId)
+//       cy.setCookie('userId', response.body.userId)
+//       cy.setCookie('userName', response.body.userName)
+//       cy.visit('/#!/main')
+//     })
+//  })
+ 
+
 // Cypress.Commands.add('payments', () => {
 //     cy.clearCookies()
 //     cy.clearLocalStorage()

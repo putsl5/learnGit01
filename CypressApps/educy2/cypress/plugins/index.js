@@ -20,3 +20,16 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 }
+
+// const { defineConfig } = require('cypress')
+
+// module.exports = defineConfig({
+//   projectId: '128076ed-9868-4e98-9cef-98dd8b705d75',
+//   // env: {
+//   //   apiUrl: '/https://the-internet.herokuapp.com',
+//   //   email: 'admin',
+//   //   password: 'admin'
+
+
+//   // },
+// })
