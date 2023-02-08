@@ -37,8 +37,32 @@ Cypress.Commands.add('login', (username, password) => {
 })
 
 
-// Cypress.Commands.add('loginViaAPI', (email, password) => {
-//     cy.request('GET', `https://the-internet.herokuapp.com/basic_auth`, {
+Cypress.Commands.add('loginViaAPI', (
+    email = Cypress.env('userEmail'),
+    password = Cypress.env('userPassword')
+  ) => {
+    cy.request({
+        method: 'GET',
+        url: 'https://the-internet.herokuapp.com/basic_auth/',
+        auth: {  
+          username: email,
+          password: password
+        }
+      }).then((response) => {
+        // cy.setCookie('sessionId', response.body.sessionId)
+        // cy.setCookie('userId', response.body.userId)
+        // cy.setCookie('userName', response.body.userName)
+        // cy.visit('/#!/main')
+
+      });
+ })
+
+
+//  Cypress.Commands.add('loginViaAPI', (
+//     email = Cypress.env('userEmail'),
+//     password = Cypress.env('userPassword')
+//   ) => {
+//     cy.request('POST', `${Cypress.env('apiUrl')}/users/login`, {
 //       username: email,
 //       password,
 //     }).then((response) => {
@@ -48,6 +72,8 @@ Cypress.Commands.add('login', (username, password) => {
 //       cy.visit('/#!/main')
 //     })
 //  })
+ 
+ 
  
 
 // Cypress.Commands.add('payments', () => {

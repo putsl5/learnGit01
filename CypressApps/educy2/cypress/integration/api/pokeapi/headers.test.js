@@ -33,18 +33,15 @@ describe('Automation API with pokeapi', () => {
         
     });
 
-    it('Succesfuly validate response body', () => {
+    it('Succesfuly validate response content', () => {
         cy.request('GET', 'https://pokeapi.co/api/v2/pokemon/ditto').then((response) => {
             expect(response.status).equal(200)
-            expect(response.body.abilities.ability).should('include', {
-                name :"limber",
-                url : "https://pokeapi.co/api/v2/ability/7/",
-                
-            })
+            expect(response.body.abilities[0].ability.name).to.eq('limber')
+            
         })
     })
 
-    it.only('Successfully validate status code with params', () => {
+    it('Successfully validate status code with params', () => {
         cy.request({
             method: 'GET',
             url: 'https://pokeapi.co/api/v2/pokemon/eduwork',
