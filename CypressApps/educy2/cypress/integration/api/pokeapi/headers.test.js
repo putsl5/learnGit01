@@ -38,9 +38,21 @@ describe('Automation API with pokeapi', () => {
             expect(response.status).equal(200)
             expect(response.body.abilities.ability).should('include', {
                 name :"limber",
-                url : "https://pokeapi.co/api/v2/ability/7/"
+                url : "https://pokeapi.co/api/v2/ability/7/",
+                
             })
         })
     })
+
+    it.only('Successfully validate status code with params', () => {
+        cy.request({
+            method: 'GET',
+            url: 'https://pokeapi.co/api/v2/pokemon/eduwork',
+            failOnStatusCode: false
+
+        }).as('eduwork')
+        cy.get('@eduwork').its('status').should('equal', 404)
+
+    }); 
  
 });
