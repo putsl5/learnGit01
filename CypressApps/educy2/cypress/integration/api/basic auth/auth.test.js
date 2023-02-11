@@ -14,14 +14,12 @@ describe('Basic Auth', function() {
             failOnStatusCode: false
         })
         cy.get('p').should('include.text', 'Congratulations! You must have the proper credentials.')
+        // untuk memanggil dari dari command
         cy.loginViaAPI('admin', 'admin')
     })
-
-    // it('should try fixtures data', () => { 
-        
-    // })
-
-    
+  
+});
+  
     // it('should try fixtures data', () => { 
     //     // untuk mengambil data dari file json (fixture)
     //     cy.fixture("user").then(user => {  
@@ -46,4 +44,4 @@ describe('Basic Auth', function() {
 
  
  
-});
+//});

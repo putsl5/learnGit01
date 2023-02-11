@@ -17,41 +17,41 @@ import internal.GlobalVariable as GlobalVariable
 
 Mobile.startApplication('mobileapp/Calculator_v8.1.apk', false)
 
-Mobile.tap(findTestObject('mobile/angka4'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka4'), 0)
 
-Mobile.tap(findTestObject('mobile/tambah'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/tambah'), 0)
 
-Mobile.tap(findTestObject('mobile/angka5'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka5'), 0)
 
-Mobile.tap(findTestObject('mobile/kali'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/kali'), 0)
 
-Mobile.tap(findTestObject('mobile/angka8'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka8'), 0)
 
-Mobile.tap(findTestObject('mobile/bagi'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/bagi'), 0)
 
-Mobile.tap(findTestObject('mobile/angka2'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka2'), 0)
 
-Mobile.tap(findTestObject('mobile/samaDengan'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/samaDengan'), 0)
 
-Mobile.tap(findTestObject('mobile/ACpembersih'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/ACpembersih'), 0)
 
-Mobile.tap(findTestObject('mobile/akar'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/akar'), 0)
 
-Mobile.tap(findTestObject('mobile/angka9'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka9'), 0)
 
-Mobile.tap(findTestObject('mobile/kurang'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/kurang'), 0)
 
-Mobile.tap(findTestObject('mobile/angka1'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/angka1'), 0)
 
-Mobile.tap(findTestObject('mobile/samaDengan'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/samaDengan'), 0)
 
-Mobile.tap(findTestObject('mobile/threeButton'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/threeButton'), 0)
 
-Mobile.tap(findTestObject('mobile/menuHistory'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/menuHistory'), 0)
 
-Mobile.tap(findTestObject('mobile/backHistory'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/backHistory'), 0)
 
-Mobile.tap(findTestObject('mobile/ACpembersih'), 0)
+Mobile.tap(findTestObject('mobile/Calculator/ACpembersih'), 0)
 
 Mobile.closeApplication()
 
